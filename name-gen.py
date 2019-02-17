@@ -7,6 +7,9 @@ print('How many names: ') #number of names to generate
 qnames = input()
 
 #load character library - consonant table, vowel table, maybe more?
+    #try loading table only once and splitting into cTab and vTab in main, speed?
+cTab = loadTable(c, tabName)
+vTab = loadTable(v, tabName)
 
 #Until charsMax is reached, generate new names
 names = 0
