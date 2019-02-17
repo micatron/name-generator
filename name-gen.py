@@ -15,4 +15,4 @@ while names < qnames:
 
 #print name
 for i in range(qnames):
-    print(namesToOutput[i]
+    print(namesToOutput[i])
