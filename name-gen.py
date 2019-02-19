@@ -1,21 +1,31 @@
 #Random name generator
 import random
 
+def loadTable(letterType, characterTable):
+    #get specified csv and make a list
+    return(characterList)
+
+def nameGen(consonants, vowels, characters):
+    startType = random.randint(0, 1)
+    #start consonant or vowel depending on startType
+    #alternate appending letters until characters is reached
+    return(aRandomName)
+    
+
 print('Number of characters: ') #get number of characters
-charsMax = input()
+charsMax = int(input())
 print('How many names: ') #number of names to generate
-qnames = input()
+qnames = int(input())
 
 #load character library - consonant table, vowel table, maybe more?
     #try loading table only once and splitting into cTab and vTab in main, speed?
 cTab = loadTable(c, tabName)
 vTab = loadTable(v, tabName)
 
-#Until charsMax is reached, generate new names
-names = 0
-while names < qnames:
-    namesToOutput[names] = nameGen(cTab, vTab, charsMax)
+#Until qnames is reached, generate new names
+for namesToOutput in range(qnames + 1):
+    namesToOutput = nameGen(cTab, vTab, charsMax)
 
-#print name
-for i in range(qnames):
-    print(namesToOutput[i])
+#print name list
+for i in namesToOutput:
+    print(i)
